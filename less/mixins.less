@@ -1,28 +1,32 @@
 // Mixins Here
-.displayflex(@direction:row, @justify:center, @align:center){
-    display: flex;
-    flex-direction: @direction;
-    justify-content: @justify;
-    align-items: @align;
+.displayflex(@direction:row, @justify:center, @align:center) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
 }
 
-.bottomspacing(){
-        padding-bottom: 2vh;
-    }
+.bottomspacing() {
+  padding-bottom: 2vh;
+}
 
-    .headfont(){
-        font-family: 'Russo One', sans-serif;
-    }
+.headfont() {
+  font-family: "Russo One", sans-serif;
+}
 
-    .btnstyle(@width, @height, @backgroundcolor,@color){
-        width:@width;
-        height: @height;
-        background-color:@backgroundcolor;
-        color:@color;
-        border-radius: 5px;
-        text-align: center;
-        padding-top: .5vh;
-        font-size:1.8rem;
-        text-decoration: none;
+.btnstyle(@width, @height, @backgroundcolor,@color) {
+  width: @width;
+  height: @height;
+  background-color: @backgroundcolor;
+  color: @color;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 0.5vh;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
 
-    }
+.imgstyle() {
+  border: 1px solid @sea-shell;
+  border-radius: 10px;
+}

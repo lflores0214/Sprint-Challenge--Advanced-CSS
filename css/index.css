@@ -163,7 +163,7 @@ p {
 nav {
   border: 1px solid seashell;
   width: 100vw;
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   background-color: #F6F6F6;
   padding-bottom: 2vh;
   padding-top: 2vh;
@@ -220,9 +220,24 @@ footer {
   padding: 0 15px;
 }
 .home .space-images {
-  display: flex;
   flex-wrap: wrap;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .space-images .blast {
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
+}
+.home .space-images .sky {
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
+}
+.home .space-images .launch {
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
 }
 @media (max-width: 500px) {
   .home .space-images .sky {
