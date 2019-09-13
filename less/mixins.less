@@ -1,1 +1,27 @@
 // Mixins Here
+.displayflex(@direction:row, @justify:center, @align:center){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.bottomspacing(){
+        padding-bottom: 2vh;
+    }
+
+    .headfont(){
+        font-family: 'Russo One', sans-serif;
+    }
+
+    .btnstyle(@width, @height, @backgroundcolor,@color){
+        width:@width;
+        height: @height;
+        background-color:@backgroundcolor;
+        color:@color;
+        border-radius: 5px;
+        text-align: center;
+        padding-top: .5vh;
+        font-size:1.8rem;
+
+    }
