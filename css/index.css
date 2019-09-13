@@ -384,6 +384,7 @@ footer {
 @media (max-width: 500px) {
   .signupcontainer .signupfield {
     width: 80vw;
+    text-align: center;
   }
 }
 .signupcontainer .signupfield .clearfix {
