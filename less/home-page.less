@@ -88,9 +88,17 @@
 
       .btn {
         .btnstyle(100px, 30px, @btn-bg-color, @sea-shell);
+        
+
+        a{
+          text-decoration: none;
+          color: @sea-shell;
+          
+        }
 
         &:hover {
           .btnstyle(100px, 30px, @sea-shell, @btn-bg-color);
+
         }
 
         @media @phone {

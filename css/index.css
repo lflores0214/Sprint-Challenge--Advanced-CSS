@@ -294,6 +294,11 @@ footer {
   text-align: center;
   padding-top: 0.5vh;
   font-size: 1.8rem;
+  text-decoration: none;
+}
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: #F1F1F1;
 }
 .home .walk .walk-text .btn:hover {
   width: 100px;
@@ -304,6 +309,7 @@ footer {
   text-align: center;
   padding-top: 0.5vh;
   font-size: 1.8rem;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -315,6 +321,7 @@ footer {
     text-align: center;
     padding-top: 0.5vh;
     font-size: 1.8rem;
+    text-decoration: none;
     font-size: 2rem;
     display: flex;
     flex-direction: row;
@@ -330,6 +337,7 @@ footer {
     text-align: center;
     padding-top: 0.5vh;
     font-size: 1.8rem;
+    text-decoration: none;
   }
 }
 .home .walk .walk-img {
@@ -347,4 +355,59 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.signupcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2852&q=80");
+  font-size: 2rem;
+  height: 100vh;
+}
+.signupcontainer .signupfield {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1;
+  opacity: 0.8;
+  width: 40vw;
+  height: 50vh;
+}
+.signupcontainer .signupfield .clearfix {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1vh;
+}
+.signupcontainer .signupfield .clearfix button {
+  width: 150px;
+  height: 50px;
+  background-color: #22283A;
+  color: #F1F1F1;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 0.5vh;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.signupcontainer .signupfield .clearfix button:hover {
+  width: 150px;
+  height: 50px;
+  background-color: #F1F1F1;
+  color: #22283A;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 0.5vh;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.signupcontainer .signupfield .clearfix button a {
+  text-decoration: none;
+  color: #F1F1F1;
+}
+.signupcontainer .signupfield .clearfix button a:hover {
+  color: #22283A;
 }
