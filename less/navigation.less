@@ -1,1 +1,32 @@
 // Navigation code here
+
+nav {
+  border:1px solid seashell;
+  width: 100vw;
+  .headfont();
+  background-color: @wild-sand;
+  .bottomspacing();
+  padding-top: 2vh;
+  .displayflex(column, center, center);
+  font-size: 1.6rem;
+
+  
+
+  .spacewalkers {
+    font-size: 4rem;
+    .bottomspacing();
+    color: @ebony-clay;
+  }
+
+  .navlinks {
+    .displayflex(row, space-around, center);
+    width: 30vw;
+    @media @phone {
+        width: 100vw;
+    }
+    a {
+      text-decoration: none;
+      color: @river-bend;
+    }
+  }
+}

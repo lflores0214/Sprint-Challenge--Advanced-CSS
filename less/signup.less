@@ -1,0 +1,49 @@
+.signupcontainer {
+  .displayflex(column, center, center);
+  background-image: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2852&q=80");
+  font-size: 2rem;
+  height: 100vh;
+  width:100vw;
+  @media @phone {
+      width: 100vw;
+  }
+
+  .signupfield {
+    .displayflex(column, center, center);
+    background-color: @sea-shell;
+    opacity: 0.8;
+    width: 40vw;
+    height: 50vh;
+
+    @media @phone{
+        width: 80vw;
+        text-align:center;
+    }
+
+    .clearfix {
+      .displayflex(column-reverse, center, center);
+      padding-top: 1vh;
+
+      @media @phone{
+          .displayflex(row-reverse, center,center);
+      }
+
+      button {
+        .btnstyle(150px, 50px, @btn-bg-color, @sea-shell);
+
+        &:hover {
+          .btnstyle(150px, 50px, @sea-shell, @btn-bg-color);
+        }
+
+        a {
+          text-decoration: none;
+          color: @sea-shell;
+
+          &:hover {
+            color: @btn-bg-color;
+          }
+        }
+      }
+    }
+  }
+}

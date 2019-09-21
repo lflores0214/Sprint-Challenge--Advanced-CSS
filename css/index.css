@@ -1,0 +1,448 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  border: 1px solid seashell;
+  width: 100vw;
+  font-family: "Russo One", sans-serif;
+  background-color: #F6F6F6;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+nav .spacewalkers {
+  font-size: 4rem;
+  padding-bottom: 2vh;
+  color: #23293B;
+}
+nav .navlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+}
+@media (max-width: 500px) {
+  nav .navlinks {
+    width: 100vw;
+  }
+}
+nav .navlinks a {
+  text-decoration: none;
+  color: #454A59;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro .headerimg {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .intro .headerimg {
+    width: 100vw;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .space-images .blast {
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
+}
+.home .space-images .sky {
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
+}
+.home .space-images .launch {
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images img {
+    width: 28%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .space-images img {
+    width: 100vw;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2vh;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 90vw;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 100px;
+  height: 30px;
+  background-color: #22283A;
+  color: #F1F1F1;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 0.5vh;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: #F1F1F1;
+}
+.home .walk .walk-text .btn:hover {
+  width: 100px;
+  height: 30px;
+  background-color: #F1F1F1;
+  color: #22283A;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 0.5vh;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 90vw;
+    height: 60px;
+    background-color: #22283A;
+    color: #F1F1F1;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 0.5vh;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .walk .walk-text .btn:hover {
+    width: 90vw;
+    height: 60px;
+    background-color: #F1F1F1;
+    color: #22283A;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 0.5vh;
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: -1;
+    width: 90vw;
+    padding-top: 2vh;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.signupcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2852&q=80");
+  font-size: 2rem;
+  height: 100vh;
+  width: 100vw;
+}
+@media (max-width: 500px) {
+  .signupcontainer {
+    width: 100vw;
+  }
+}
+.signupcontainer .signupfield {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1;
+  opacity: 0.8;
+  width: 40vw;
+  height: 50vh;
+}
+@media (max-width: 500px) {
+  .signupcontainer .signupfield {
+    width: 80vw;
+    text-align: center;
+  }
+}
+.signupcontainer .signupfield .clearfix {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1vh;
+}
+@media (max-width: 500px) {
+  .signupcontainer .signupfield .clearfix {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.signupcontainer .signupfield .clearfix button {
+  width: 150px;
+  height: 50px;
+  background-color: #22283A;
+  color: #F1F1F1;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 0.5vh;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.signupcontainer .signupfield .clearfix button:hover {
+  width: 150px;
+  height: 50px;
+  background-color: #F1F1F1;
+  color: #22283A;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 0.5vh;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.signupcontainer .signupfield .clearfix button a {
+  text-decoration: none;
+  color: #F1F1F1;
+}
+.signupcontainer .signupfield .clearfix button a:hover {
+  color: #22283A;
+}
